@@ -20,8 +20,10 @@
                     </a>
                 </div>
                 <div class="right-links">
-                    <a href="#"><button class="btn btn-secondary">CV <i class="fa-solid fa-arrow-right"></i></button></a>
-                    <a href="#"><button class="btn btn-secondary">Contact <i class="fa-solid fa-arrow-right"></i></button> </a>
+                    <a href="#"><button class="btn btn-secondary">CV <i
+                                class="fa-solid fa-arrow-right"></i></button></a>
+                    <a href="#"><button class="btn btn-secondary">Contact <i
+                                class="fa-solid fa-arrow-right"></i></button> </a>
                 </div>
             </div>
         </div>
@@ -30,7 +32,7 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="container">
-                <div class="default-stage active">
+                <div id="default-stage" class="active default-stage">
                     <h1>Hello, </br> I'm Alex.</h1>
                     <div class="sub-heading">
                         <p>I’m a designer that works with brands and platforms to architect positive change in human
@@ -38,35 +40,163 @@
                             expertise
                             in physical and digital experiences, design thinking and brand. </p>
                     </div>
-                    <button id="contact-alex-btn" class="btn btn-primary">Contact Alex <i class="fa-solid fa-pen-to-square"></i></button>
+                    <button id="contact-alex-btn" class="btn btn-primary">Contact Alex <i
+                            class="fa-solid fa-pen-to-square"></i></button>
                 </div>
 
-                <div class="form-2nd-step ">
-                    <div class="contact-form">
-                        <form action="">
-                            <textarea name="" id=""></textarea>
-                        </form>
+                <div id="form-2nd-step" class="form-2nd-step">
+                    <div class="form-elements">
+                        <div class="contact-form">
+                            <textarea name="" id="contact-alex-message"></textarea>
+                        </div>
+                        <div class="form-caption">
+                            <p>How can I serve you? </p>
+                            <p> How may I reach you? </p>
+                            <p>Don’t be shy.</p>
+                        </div>
                     </div>
-                    <div class="form-caption">
-                        <p>How can I serve you? </p>
-                        <p> How may I reach you? </p>
-                        <p>Don’t be shy.</p>
-                    </div>
-                    <button id="send-msg-btn">Send Message <i class="fa-solid fa-pen-to-square"></i></button>
+                    <button id="pre-send-msg-btn" class=" btn btn-primary">I'm Done <i
+                            class="fa-solid fa-pen-to-square"></i></button>
                 </div>
 
-                <div class="form-last-stage">
+                <div class="form-name-email-stage" id="form-name-email-stage">
+                    <h2>Almost there! </h2>
+                    <h6>We just need a way to get back to you.</h6>
+                    <div class="input-fields pt-4">
+                        <input type="text" id="name-field" minlength="3" placeholder="Your Nice Name">
+                        <input type="email" id="email-field" placeholder="Your Email Address">
+                        <button id="send-msg-btn" class=" btn btn-primary">Send Message<i
+                                class="fa-solid fa-pen-to-square"></i></button>
+                    </div>
+                </div>
+
+                <div id="form-last-stage" class="form-last-stage">
                     <h2>Thanks Friend! </h2>
                     <div class="sub-heading">
                         <p>I’m a designer that works with brands and platforms to architect positive change in human
                             interface design. My passion is to build experiences that motivate action, combining
                             expertise in physical and digital experiences, design thinking and brand. </p>
                     </div>
-                    <div class="btn-section">
+                    <div class="btn-section d-flex flex-wrap align-items-center justify-content-between">
                         <span>
                             Sent! I’ll get back to you soon.
                         </span>
-                        <button id="send-msg-btn">wait, I’m not done! <i class="fa-solid fa-pen-to-square"></i></button>
+                        <button id="send-msg-again-btn" class="btn-primary">wait, I’m not done! <i
+                                class="fa-solid fa-pen-to-square"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Section -->
+        <section class="portfolio">
+            <div class="container-fluid">
+                <div class="grid-container">
+                    <div class="item grid-col-2 portfolio-style-1"
+                        style="background: url('./assets/img/portfolio_1.png');">
+                        <div class="hover-content">
+                            <span>
+                                Geospatial Intelligence </br> Website Architecture
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item portfolio-style-normal"
+                        style="background: url('./assets/img/spec.ff6ecee5.png.png');">
+
+                    </div>
+                    <div class="item portfolio-style-2" style="background: url('./assets/img/ui-1536_128.gif');">
+                        <div class="hover-content">
+                            <span>
+                                MosaicDX Patient </br>and Practitioner Portal
+                            </span>
+                            <div class="hover-content-inner">
+                                <img src="./assets/img/static_from_gif.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item portfolio-style-2" style="background: url('./assets/img/static_ui.png');">
+                        <div class="hover-content">
+                            <span>
+                                MosaicDX Patient </br>and Practitioner Portal
+                            </span>
+                            <div class="hover-content-inner">
+                                <img src="./assets/img/Ui.gif" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item portfolio-style-2 portfolio-video grid-row-2"
+                        style="background: url('./assets/img/static_ui.png');">
+                        <div class="hover-content">
+                            <div class="hover-content-inner">
+                                <video muted autoplay src="./assets/img/watchface.924c1a15.webm" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item grid-row-2">Item 6</div>
+                    <div class="item ">Item 7</div>
+                    <div class="item ">Item 8</div>
+                    <div class="item ">Item 9</div>
+                    <div class="item ">Item 10</div>
+                    <div class="item ">Item 11</div>
+                    <div class="item ">Item 12</div>
+                </div>
+
+            </div>
+            <div class="portfolio-overlay overlay">
+                <div class="top-navigation">
+                    <div class="d-flex justify-content-center">
+                        <div class="prev">
+                            <button><i class="fa-solid fa-arrow-left"></i> Previous</button>
+                        </div>
+                        <div class="next">
+                            <button>Next <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                        <div class="close">
+                            <button>Close <i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container overlay-container">
+
+                    <div class="overlay-content">
+
+                        <div class="title-and-logo overlay-boxed">
+                            <div class="d-flex justify-content-between">
+                                <div class="left-title">
+                                    <h2>MosaicDX Patient and Practitioner Portal and Marketing Website</h2>
+                                </div>
+                                <div class="right-logo">
+                                    <figure>
+                                        <img src="./assets/img/Morse.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-content pt-2 pb-2 overlay-boxed">
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <div class="left">
+                                    <h2 class="big_bold">0-1 This is what it looks like multilined</h2>
+                                    <h2 class="medium_bold">0-1 This is what it looks like multilined</h2>
+                                    <h2 class="medium">0-1 This is what it looks like multilined</h2>
+                                    <h2 class="small_bold">0-1 This is what it looks like multilined</h2>
+                                    <h2 class="light_gray">0-1 This is what it looks like multilined</h2>
+                                </div>
+                                <div class="right-titles">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- full-width -->
+                        <div class="section-content pt-2 pb-2 overlay-leftattached">
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <div class="left w-100">
+                                    <img src="./assets/img/big_image.png" alt="">
+                                </div>
+                                <div class="right-titles">
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -85,7 +215,7 @@
                         <div class="col-md-4 card-item">
                             <div class="card-inner">
                                 <figure>
-                                    <img src="./assets/img/Background.png" alt="">
+                                    <img class="img-fluid" src="./assets/img/Background.png" alt="">
                                 </figure>
                                 <div class="card-details">
                                     <p>Custom description gets written here</p>
@@ -95,7 +225,7 @@
                         <div class="col-md-4 card-item">
                             <div class="card-inner">
                                 <figure>
-                                    <img src="./assets/img/Background.png" alt="">
+                                    <img class="img-fluid" src="./assets/img/Background.png" alt="">
                                 </figure>
                                 <div class="card-details">
                                     <p>Custom description gets written here</p>
@@ -105,7 +235,7 @@
                         <div class="col-md-4 card-item">
                             <div class="card-inner">
                                 <figure>
-                                    <img src="./assets/img/Background.png" alt="">
+                                    <img class="img-fluid" src="./assets/img/Background.png" alt="">
                                 </figure>
                                 <div class="card-details">
                                     <p>Custom description gets written here</p>
@@ -131,7 +261,7 @@
                                 <div class="card-inner">
                                     <div class="d-flex">
                                         <figure class="left-img">
-                                            <img src="./assets/img/Background_1.png" alt="">
+                                            <img class="img-fluid" src="./assets/img/Background_1.png" alt="">
                                         </figure>
                                         <div class="right-text">
                                             <p>Writing and speaking on web3 (medium)</p>
@@ -145,7 +275,7 @@
                                 <div class="card-inner">
                                     <div class="d-flex">
                                         <figure class="left-img">
-                                            <img src="./assets/img/Background_1.png" alt="">
+                                            <img class="img-fluid" src="./assets/img/Background_1.png" alt="">
                                         </figure>
                                         <div class="right-text">
                                             <p>Writing and speaking on web3 (medium)</p>
@@ -159,7 +289,7 @@
                                 <div class="card-inner">
                                     <div class="d-flex">
                                         <figure class="left-img">
-                                            <img src="./assets/img/Background_1.png" alt="">
+                                            <img class="img-fluid" src="./assets/img/Background_1.png" alt="">
                                         </figure>
                                         <div class="right-text">
                                             <p>Writing and speaking on web3 (medium)</p>
@@ -173,7 +303,7 @@
                                 <div class="card-inner">
                                     <div class="d-flex">
                                         <figure class="left-img">
-                                            <img src="./assets/img/Background_1.png" alt="">
+                                            <img class="img-fluid" src="./assets/img/Background_1.png" alt="">
                                         </figure>
                                         <div class="right-text">
                                             <p>Writing and speaking on web3 (medium)</p>
@@ -188,7 +318,28 @@
         </section>
     </main>
 
+    <script src="./assets/js/script.js"></script>
+    <script>
+        let portfolioItems = document.querySelectorAll('.portfolio .grid-container .item');
+        let portfolioOverlay = document.querySelector('.portfolio .portfolio-overlay');
+        let portfolioOverlayClose = document.querySelector('.portfolio .portfolio-overlay .close');
+        portfolioItems.forEach((item) => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                portfolioOverlay.classList.add('d-block');
+                document.querySelector('body').style.overflowY = "hidden";
+                document.querySelector('header').classList.add("header-fixed");
+            })
+        })
+        portfolioOverlayClose.addEventListener('click', (e) => {
+            e.preventDefault();
+            portfolioOverlay.classList.remove('d-block');
+             document.querySelector('body').style.overflowY = "unset";
+             document.querySelector('header').classList.remove("header-fixed");
+        })
 
+
+    </script>
 </body>
 
 </html>
